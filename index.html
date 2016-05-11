@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SSL – Simple Scroll Loader – Demo</title>
+  <style>
+    body { background: black; color: #aaa; }
+    img { display: inline-block; width: 500px; height: 500px; border: 1px solid #AAA; }
+    #content { width: 1004px; margin: 4em auto; }
+  </style>
+</head>
+<body>
+  <div id="content"></div>
+  <script src="ssl.js"></script>
+  <script>
+    var filters = [
+      "Bessel", "Blackman", "Box", "Catrom", "Cubic", "Gaussian", "Hamming",
+      "Hanning", "Hermite", "Lanczos", "Mitchell", "Point", "Quadratic",
+      "Sinc", "Triangle"
+    ]
+    var imageList = []
+
+    for(var i=0; i<filters.length; i++) {
+      for(var j=0; j<16; j++) {
+        imageList.push("img/gradient-test3-" + filters[i] + "-" + j.toString(16).toUpperCase() + ".png")
+      }
+    }
+
+    var ssl = new SimpleScrollLoader(imageList, 4)
+  </script>
+</body>
+</html>
