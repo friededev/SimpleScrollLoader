@@ -10,9 +10,9 @@ Usage
 new SimpleLazyLoader(listOfImagePaths, initialBatch, batchSize)
 ```
 
-listOfImagePaths is a simple array with image paths.
-initialBatch is the amount of images to add in the beginning (default: 0)
-batchSize is the amount of images to add when scroll position is reached (default: 2)
+* `listOfImagePaths` is a simple array with image paths.
+* `initialBatch` is the amount of images to add in the beginning (default: 0)
+* `batchSize` is the amount of images to add when scroll position is reached (default: 2)
 
 
 Example Images
